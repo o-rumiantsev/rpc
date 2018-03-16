@@ -1,6 +1,6 @@
 # rpc
 
-RPC library, which was inspired by [JSTP](https://github.com/metarhia/jstp)
+RPC library, which was inspired by [Metarhia JSTP](https://github.com/metarhia/jstp)
 _________________________________________
 # Server side
 ```javascript
