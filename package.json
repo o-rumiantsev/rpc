@@ -1,0 +1,9 @@
+{
+  "name": "rpc",
+  "version": "0.1.0",
+  "author": "Rumiantsev Oleksii <rumiantsev.oleksii@gmail.com>",
+  "description": "RPC based on TCP",
+  "license": "MIT",
+  "main": "rpc.js",
+  "readmeFilename": "README.md"
+}
