@@ -25,10 +25,12 @@ const client = new rpc.Client();
 client.connect({
   host: 'localhost',
   port: '3000'
-});
-
-client.execute('power', [10, 2], (err, result) => {
+}, (err) => {
   if (err) throw err;
-  console.log(result) // 100
+
+  client.methods.power([2, 10], (err, res) => {
+    if (err) throw err;
+    console.log(res); // 1024
+  });
 });
 ```

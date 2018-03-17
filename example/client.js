@@ -7,17 +7,14 @@ const client = new rpc.Client();
 client.connect({
   host: 'localhost',
   port: '3000'
-});
+}, (err) => {
 
-client.execute('power', [2, 64], (err, result) => {
-  if (err) {
-    console.error(err.message);
-    return;
-  }
-
-  console.log(result);
-
-  client.execute('error', [], (err) => {
+  client.methods.power([2, 64], (err, res) => {
     if (err) throw err;
-  })
+    console.log(res);
+  });
+
+
+
+  client.end();
 });
